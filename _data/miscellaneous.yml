@@ -1,0 +1,9 @@
+team:
+  - {name: "Parry Lage", post: 'CEO', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Bergey Srin", post: 'CEO', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Cenedict Bumberbatch", post: 'SVP', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Wohn Jatson", post: VP', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Mark Harmon", post: 'POTUS', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Jessica Chastain", post: 'FLOTUS', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Cames Jomey", post: 'CBI', image: '//via.placeholder.com/600x600', bio: "Small bio"}
+  - {name: "Tonald Drump", post: 'CIO', image: '//via.placeholder.com/600x600', bio: "Small bio"}

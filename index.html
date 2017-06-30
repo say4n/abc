@@ -1,0 +1,41 @@
+---
+layout: page
+---
+
+<div class="flex flex-2">
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+	<article>
+		{% if post.image %}
+			<div class="image fit">
+				<img src="{{ post.image }}" alt="{{ post.title }}" />
+			</div>
+		{% endif %}
+		<header>
+			<h3>{{ post.title }}</h3>
+		</header>
+		<p>{{ post.excerpt }}</p>
+		<footer>
+			<a href="{{ post.url }}" class="button alt small">Read more</a>
+		</footer>
+		</br>
+	</article>
+{% endfor %}
+</div>
+
+
+{% if paginator.total_pages > 1 %}
+	<div>
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#three" class="button special">&laquo; Prev</a>
+		{% else %}
+			<span class="button special disabled">&laquo; Prev</span>
+		{% endif %}
+
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#three" class="button special">Next &raquo;</a>
+		{% else %}
+			<span class="button special disabled">Next &raquo;</span>
+		{% endif %}
+	</div>
+{% endif %}
