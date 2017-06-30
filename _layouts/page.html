@@ -15,77 +15,10 @@
 	</head>
 	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<img class="logo fill" width="100px" src="images/logo.png"/> 
-					<nav id="nav">
-						<a href="{{ site.baseurl }}/">Home</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
-
-		<!-- Banner -->
-			<section id="banner">
-				<h1><span class="typed">ABC</span></h1>
-				<p>Jadavpur University Entrepreneurship Cell</p>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper">
-				<div class="inner">
-					<div class="flex flex-3">
-						<article>
-							<header>
-								<h3>Analytics</h3>
-							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
-						</article>
-						<article>
-							<header>
-								<h3>Business</h3>
-							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
-						</article>
-						<article>
-							<header>
-								<h3>Consulting</h3>
-							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
-						</article>
-					</div>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper style1 special">
-				<div class="inner">
-					<header>
-						<h2>About Us</h2>
-						<p>Meet the Team</p>
-					</header>
-					<div class="flex flex-4">
-						{% for person in site.data.miscellaneous.team %}
-						<div class="box person">
-							{% if person.image %}
-								<div class="image round">
-									<img src="{{ person.image }}" alt="{{ person.name }}" />
-								</div>
-							{% else %}
-								<div class="image round">
-									<img src="//via.placeholder.com/600x600" alt="{{ person.name }}" />
-								</div>
-							{% endif %}
-
-							<h3>{{ person.name }}</h3>
-							<p>{{ person.post }}</p>
-							<p>{{ person.bio }}</p>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</section>
+		{% include header.html %}
+		{% include banner.html %}
+		{% include infopanel.html %}
+		{% include team.html %}
 
 		<!-- Three -->
 			<section id="three" class="wrapper special">
@@ -102,24 +35,8 @@
 		{% include form.html %}
 		{% include footer.html %}
 
-		<!-- Scripts -->
-			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
-			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/util.js"></script>
-			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
-			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/typed.min.js"></script>
-			<script type="text/javascript">
-				// Typed 
-				document.addEventListener('DOMContentLoaded', function(){
-				      Typed.new('.typed', {
-				        strings: ["A – B – C", "Analytics.", "Business.", "Consulting."],
-			            typeSpeed: 100,
-			            backDelay: 800,
-			            loop: true,
-			            loopCount: null,
-				      });
-				  });
-			</script>
+		{% include scripts.html %}
+		
 		<!--
 			Sayan Goswami - 2017 - goswami.sayan47@gmail.com
 		-->

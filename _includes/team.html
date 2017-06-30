@@ -1,0 +1,28 @@
+<!-- Two -->
+<section id="two" class="wrapper style1 special">
+	<div class="inner">
+		<header>
+			<h2>About Us</h2>
+			<p>Meet the Team</p>
+		</header>
+		<div class="flex flex-4">
+			{% for person in site.data.miscellaneous.team %}
+			<div class="box person">
+				{% if person.image %}
+					<div class="image round">
+						<img src="{{ person.image }}" alt="{{ person.name }}" />
+					</div>
+				{% else %}
+					<div class="image round">
+						<img src="//via.placeholder.com/600x600" alt="{{ person.name }}" />
+					</div>
+				{% endif %}
+
+				<h3>{{ person.name }}</h3>
+				<p>{{ person.post }}</p>
+				<p>{{ person.bio }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

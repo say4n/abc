@@ -2756,7 +2756,7 @@
 		}
 
 		#header .border-around {
-			border: 5px solid rgba(255,255,255,0.5);
+			border: 5px solid rgba(255,255,255,0.9);
 		}
 
 		#header a {
@@ -2774,7 +2774,7 @@
 			#header a:hover {
 				color: #ffffff;
 				display: inline-block;
-				border-bottom: 5px solid rgba(255,255,255,0.5);
+				border-bottom: 5px solid rgba(255,255,255,0.9);
 				-webkit-transition: 0.5s ease;
 				transition: 0.5s ease;
 			}
@@ -2806,7 +2806,7 @@
 			@media screen and (max-width: 736px) {
 
 				#header a {
-					padding: 0 0.5em;
+					padding: 0 0.9em;
 				}
 
 			}
@@ -2848,6 +2848,10 @@
 			display: none;
 		}
 
+	}
+
+	#nav {
+		text-shadow: 1px 1px 0 rgba(71,71,71, 0.7);
 	}
 
 	#navPanel {
@@ -2944,7 +2948,7 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('https://source.unsplash.com/lsng4VBmCjM/800x450');
+		background-image: url('../../images/background.gif');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -2960,13 +2964,15 @@
 			line-height: 1.5em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
+			text-shadow: 1px 1px 0 rgba(71,71,71, 0.7);
 		}
 
 		#banner p {
 			font-size: 1.5em;
 			font-weight: 500;
-			color: rgba(255, 255, 255, 0.55);
+			color: rgba(255, 255, 255, 0.9);
 			margin-bottom: 1.75em;
+			text-shadow: 1px 1px 0 rgba(71,71,71, 0.7);
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
