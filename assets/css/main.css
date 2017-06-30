@@ -2941,7 +2941,7 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
+		background-image: url('https://source.unsplash.com/lsng4VBmCjM/800x450');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -2952,7 +2952,7 @@
 
 		#banner h1 {
 			font-size: 4em;
-			font-weight: 700;
+			font-weight: 600;
 			color: #fff;
 			line-height: 1.5em;
 			margin: 0 0 0.5em 0;
