@@ -17,6 +17,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		overflow-x: hidden;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2960,6 +2961,7 @@
 		text-align: center;
 		border-top: 0.5em solid rgba(255,255,255,0.3);
 		position: relative;
+		overflow: hidden;
 	}
 
 		#banner h1 {
