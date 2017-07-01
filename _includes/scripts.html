@@ -1,3 +1,5 @@
+<!-- Loader sheet -->
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/svg.css">
 <!-- Scripts -->
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
@@ -75,6 +77,7 @@
 
 	  $(function () {
 	      scaleToFill();
+	      disableScrolling();
 
 	      $('.video-background').on('loadeddata', scaleToFill);
 
@@ -83,11 +86,20 @@
 	      });
 	  });
 
-	  // Video loop 
-	  $('video').on('ended', function () {
-	    this.load();
-	    this.play();
+	  function disableScrolling(){
+	      var x=window.scrollX;
+	      var y=window.scrollY;
+	      window.onscroll=function(){window.scrollTo(x, y);};
+	  }
+
+	  function enableScrolling(){
+	      window.onscroll=function(){};
+	  }
+
+	  // Hide preloader
+	  $(window).load(function() {
+	  	$('#page_loader').css("display", "none");
+	  	enableScrolling();
 	  });
 
-	  $('#video_wrapper').css("height", $("#banner").outerHeight());
 </script>
