@@ -3129,4 +3129,9 @@
     left: 0;
     top: 0;
     z-index: -9999;
+    background-image: transparent url('../../images/background_poster.jpg') no-repeat 0 0;
+    -webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	-o-background-size:cover; 
+	background-size:cover; 
 }
