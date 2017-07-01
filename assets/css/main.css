@@ -2073,12 +2073,14 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
 
 	textarea {
 		padding: 0.75em 1em;
+		resize: none;
 	}
 
 	input[type="checkbox"],
@@ -2960,6 +2962,7 @@
 		text-align: center;
 		border-top: 0.5em solid rgba(255,255,255,0.3);
 		position: relative;
+		overflow: hidden;
 	}
 
 		#banner h1 {
